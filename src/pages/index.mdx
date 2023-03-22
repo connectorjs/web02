@@ -2,8 +2,11 @@
 title: Home
 layout: full
 ---
+
 import {Mermaid} from 'mdx-mermaid/Mermaid'
 
+
+{/* 
 <p align="center">
   <img src="/assets/logo/logo-img.png" width="400" height="auto" />
   <h1 className="text-4xl font-bold text-gradient-anime">
@@ -14,20 +17,57 @@ import {Mermaid} from 'mdx-mermaid/Mermaid'
 
 # ConnectorJS
 
+<hr /> */}
+{/* 
+<p align="center">
+  <img src="/assets/img/infographic-01.png" width="50%" height="auto" />
+</p>
+
 <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-l  from-yellow-600 to-blue-500 ">
     Tailwind CSS Gradient Text Color
-</h1>
+</h1> */}
 
 
-Hello, world!..3
+<div className="nx-h-full gap-6 flex flex-col justify-start lg:justify-center items-center lg:items-start" style={{height:'calc(100vh - 60px)'}}>
+  <h1 className="text-center lg:text-left font-extrabold tracking-tighter text-3xl md:text-4xl lg:text-5xl nx-py-2  text-gradient-coral-yellow" >
+    Easily connect IOT<br />
+    Manage and analyze them.
+  </h1>
+   <p className="text-slate-700 dark:text-slate-300 mb-2 text-center text-base sm:text-lg max-w-xl lg:text-left" >
+    With Connector.JS, you can easily connect to data, api, wcf, electronic devices (raspberry pi), file, server...
+    
+    <a
+      className="underline underline-offset-2 text-black dark:text-light-gold"
+      href="/login"
+      >API key</a>
+  </p>
+  <div className="relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute">
+    <img src="/assets/img/connectorjs-the-expansion-of-iot.png"
+      alt="connector.js"
+      className="img-shadow"
+      style={{
+          position: 'absolute',
+          height: '100%',
+          width: '100%',
+          left: 0,
+          top: 0,
+          right: 0,
+          bottom: 0,
+          objectFit: 'contain',
+          color: 'transparent',
+          }}
+    />
+  </div>
+</div>
+
+# Introduction
 
 
 <h1 className="text-3xl font-bold text-gradient-anime">
   Tailwind CSS Custom Gradient Text Color
 </h1> 
 
-
-<p>
+{/* 
 <Mermaid chart={`gitGraph
     commit
     commit
@@ -48,9 +88,9 @@ Hello, world!..3
     checkout main
     merge testmodule
     commit
-`} />
+`} /> */}
 
-</p>
+
 <hr />
 <br />
 

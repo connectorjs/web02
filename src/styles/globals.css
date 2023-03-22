@@ -69,8 +69,8 @@
   --mj-bg-rgb: 9, 5, 35;
   --mj-text-h: #fff;
   --mj-text-h-rgb: 255, 255, 255;
-  --mj-text-p:#8b949e;
-  --mj-text-p:139, 148, 158;
+  --mj-text-p: #8b949e;
+  --mj-text-p: 139, 148, 158;
 }
 
 /* @media (prefers-color-scheme: dark) { */
@@ -79,7 +79,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 7, 7, 37;
   --background-end-rgb: 17, 17, 47;
-  
+
   --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
   --secondary-glow: linear-gradient(to bottom right,
       rgba(1, 65, 255, 0),
@@ -109,12 +109,12 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
   /* background: linear-gradient(180deg, transparent 0, #070737 300px), fixed 0 0 /20px 20px radial-gradient(#80808040 1px, transparent 0), fixed 10px 10px /20px 20px radial-gradient(#80808080 1px, transparent 0);
   background-attachment: fixed; */
-  background: linear-gradient(180deg, transparent 0, rgba(var(--background-end-rgb),1) 60%), fixed 0 0 /20px 20px radial-gradient(#80808020 1px, transparent 0), fixed 10px 10px /20px 20px radial-gradient(#80808040 1px, transparent 0);
+  background: linear-gradient(180deg, transparent 0, rgba(var(--background-end-rgb), 1) 60%), fixed 0 0 /20px 20px radial-gradient(#80808020 1px, transparent 0), fixed 10px 10px /20px 20px radial-gradient(#80808040 1px, transparent 0);
   background-attachment: fixed;
 }
 
 .dark body {
-  background: linear-gradient(180deg, transparent 0, rgba(var(--background-end-rgb),1) 60%), fixed 0 0 /20px 20px radial-gradient(#80808020 1px, transparent 0), fixed 10px 10px /20px 20px radial-gradient(#80808040 1px, transparent 0);
+  background: linear-gradient(180deg, transparent 0, rgba(var(--background-end-rgb), 1) 60%), fixed 0 0 /20px 20px radial-gradient(#80808020 1px, transparent 0), fixed 10px 10px /20px 20px radial-gradient(#80808040 1px, transparent 0);
   background-attachment: fixed;
 }
 
@@ -171,12 +171,12 @@ a {
 
 html[class~=dark] .dark\:nx-text-neutral-500 {
   --tw-text-opacity: 1;
-  color: rgba(215,215,215,var(--tw-text-opacity));
+  color: rgba(215, 215, 215, var(--tw-text-opacity));
 }
 
 html[class~=dark] .dark\:nx-text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgba(196,203,215,var(--tw-text-opacity));
+  color: rgba(196, 203, 215, var(--tw-text-opacity));
 }
 
 
@@ -185,7 +185,7 @@ html[class~=dark] .dark\:nx-text-gray-400 {
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to right, #ff5, #22d);
-  
+
 }
 
 .text-gradient-mint-blue {
@@ -206,11 +206,11 @@ html[class~=dark] .dark\:nx-text-gray-400 {
 
 @keyframes animation_text_gradient {
   0% {
-      background-position: 0px 0px
+    background-position: 0px 0px
   }
 
   to {
-      background-position: 1000px 0px
+    background-position: 1000px 0px
   }
 }
 
@@ -218,9 +218,61 @@ html[class~=dark] .dark\:nx-text-gray-400 {
   -webkit-text-fill-color: transparent;
   font-style: normal;
   display: inline-block;
-  -webkit-background-clip: text!important;
-  background-clip: text!important;
-  background: linear-gradient(90deg,#ce55b0,#f34dac 12%,#f48e66 27%,#f0b832 38%,#b2ce37 54%,#63d7af 70%,#1cc2df 84%,#0580e6 94%,#ce55b0);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  background: linear-gradient(90deg, #ce55b0, #f34dac 12%, #f48e66 27%, #f0b832 38%, #b2ce37 54%, #63d7af 70%, #1cc2df 84%, #0580e6 94%, #ce55b0);
   background-size: 1000px;
   animation: animation_text_gradient 4s linear infinite;
+}
+
+
+
+.img-shadow {
+  width: 250px;
+  filter: drop-shadow(5px 10px 5px #28281487);
+}
+
+.dark .img-shadow {
+  width: 250px;
+  filter: drop-shadow(5px 10px 5px #090a01e2);
+}
+
+.dark .dark\:text-light-gold {
+  --tw-text-opacity: 1;
+  /* color: rgb(245 188 81/var(--tw-text-opacity)); */
+  color: #9acd32;
+}
+
+.dark .three-d {
+  text-shadow: 0 5px 0 #070727;
+}
+
+/* 
+@media (min-width: 1024px) .lg\:text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) .lg\:text-left {
+  text-align: left;
+}
+
+@media (min-width: 768px) .md\:text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+} */
+
+.three-d {
+  text-shadow: none;
+}
+
+h1 .nx-leading-7 {
+
+  line-height: unset;
+}
+
+.nextra-content {
+  --tw-text-opacity: 1;
+  color: rgba(51,65,85,var(--tw-text-opacity));
+  overflow-y: hidden;
 }

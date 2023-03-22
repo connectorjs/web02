@@ -40,7 +40,7 @@ const Footer =()=>{
     <div >
       <a className="nx-flex nx-items-center nx-gap-1" target="_blank" rel="noopener noreferrer" title="miajupiter.com homepage" href="https://miajupiter.com">
         <span>Powered by</span>
-        <img src='assets/logo/miajupiter-logo.svg' style={{ height: '32px' }} />
+        <img src='/assets/logo/miajupiter-logo.svg' style={{ height: '32px' }} />
       </a>
     </div>
     {/* <p>{new Date().getFullYear()} © <a href='https://miajupiter.com' target="_blank">MiaJupiter.com</a></p> */}
