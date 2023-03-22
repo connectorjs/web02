@@ -1,0 +1,34 @@
+# Contact
+
+import styles from '@/styles/Home.module.css'
+import { MarkdownEditor } from '@/components/markdownEditor'
+
+export const VV1=()=>(<div className={styles.description}><p>
+  Get started by editing&nbsp;
+  <code className={styles.code}>pages/index.tsx</code>
+</p></div>)
+
+export const VV2=()=>(<div className={styles.center}>
+  <VV1 />
+  <div style={{fontFamily: 'var(--font-mono)',  fontSize:'2rem', marginTop:'20px'}}>
+    <pre className={styles.shiki} style={{backgroundColor: 'transparent'}}>
+      <code>
+        <span className={styles.line}>
+          <span style={{color: '#C9D1D9'}}>console.</span>
+          <span style={{color: '#D2A8FF'}}>log</span>
+          <span style={{color: '#C9D1D9'}}>(</span>
+          <span style={{color: '#A5D6FF'}}>'hi next.js'</span>
+          <span style={{color: '#C9D1D9'}}>)</span>
+        </span>
+      </code>
+    </pre>
+  </div>
+  <p>
+    lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor sit amet loreme
+  </p>
+</div>)
+
+<VV2 />
+
+
+<MarkdownEditor />

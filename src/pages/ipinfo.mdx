@@ -1,0 +1,25 @@
+# ip info
+## Api deneme sonucu
+import React,{ useState,  useEffect} from 'react'
+
+export const RR1=()=>{
+const [result, setResult] = useState(null)
+const [loading, setLoading] = useState(true)
+const [error, setError] = useState(null)
+useEffect(()=>{
+  setLoading(true)
+  fetch('https://api.connectorjs.com/connector')
+  .then(resp=>resp.json())
+  .then(setResult)
+  .catch(setError)
+  .finally(setLoading(false))
+},[])
+
+return <div>
+<p>result: {result && (result.data || result.error.message)}</p>
+<p>err: {error && error.error.message}</p>
+<p>{loading?'Loading....':''}</p>
+</div>
+}
+
+## <RR1 />

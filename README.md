@@ -1,2 +1,2 @@
-# web02
-Web site and documentation
+# web
+ConnectorJS.com main web page

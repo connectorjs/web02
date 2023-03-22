@@ -1,0 +1,48 @@
+{
+  "name": "connectorjs-web",
+  "version": "1.0.0",
+  "description": "ConnectorJS.com main web page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "tailwind": "tailwind build src/styles/index.css -o src/styles/tailwind.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connectorjs/web.git"
+  },
+  "keywords": [
+    "connectorjs",
+    "web",
+    "nodejs",
+    "nextjs",
+    "reactjs",
+    "mdx",
+    "docs",
+    "nextra"
+  ],
+  "author": "MiaJupiter Developer Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/connectorjs/web/issues"
+  },
+  "homepage": "https://github.com/connectorjs/web#readme",
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "mdx-mermaid": "^1.3.2",
+    "next": "^13.2.3",
+    "next-mdx-remote": "^4.4.1",
+    "nextra-theme-docs": "^2.2.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remarkable": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.3",
+    "tailwindcss": "^3.2.7"
+  }
+}

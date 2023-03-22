@@ -1,0 +1,82 @@
+---
+layout: full
+toc: true
+# typesetting: page
+---
+
+# About
+
+This is the about page! This page is shown on the navbar.
+
+
+
+import Counters from '../components/counters'
+
+<Counters />
+
+
+
+Inlined syntax highlighting is also supported `let x = 1{:jsx}` via:
+
+```  {2} copy
+<h1 className="nx-bg-gradient-to-r nx-from-blue-500 nx-to-transparent">
+  Hello world!
+</h1>
+```
+
+```html filename="deneme.html" {3} copy
+<div>
+  <h1>My Theme</h1>
+  <div style={{ border: '1px solid' }}>
+    {children}
+  </div>
+</div>
+```
+
+
+import { Tabs, Tab } from 'nextra-theme-docs'
+import {Button} from '../components/button'
+import { useState } from 'react'
+
+
+export const Mybtn=()=>{
+  const [count, setCount] = useState(0)
+  return <Button onClick={() => setCount(count + 2)} >{count} Click me</Button>
+}
+
+
+
+<Mybtn />
+
+
+
+<Tabs items={['JavaScript', 'C++', {label:'C', disabled: true}, 'Python']} defaultIndex={0}>
+  <Tab>
+    ```js filename="hi.js" copy showLineNumbers
+    import { useState, useEffect } from 'react'
+    ```
+  </Tab>
+  <Tab>
+    ```cpp filename="hi.cpp" copy showLineNumbers
+    #include <iostream>
+    #include <iostream>
+    sdfsd
+
+    sdfsdef
+
+    ```
+  </Tab>
+  <Tab>
+    ```c filename="hi.c" copy
+    #include <stdio.h>
+    ```
+  </Tab>
+  <Tab>
+    ```python filename="hello.py" copy
+    print('Hello, world!')
+    ```
+  </Tab>
+</Tabs>
+
+
+ 
