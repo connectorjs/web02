@@ -12,6 +12,7 @@
   --shiki-token-string-expression: #22863a;
   --shiki-token-punctuation: #212121;
   --shiki-token-link: #22863a;
+  color-scheme: dark;
 }
 
 .dark {
@@ -29,6 +30,7 @@
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
 
 :root {
   --max-width: 1100px;
@@ -168,6 +170,7 @@ a {
 .dark {
   --nextra-primary-hue: 122deg;
 }
+
 
 html[class~=dark] .dark\:nx-text-neutral-500 {
   --tw-text-opacity: 1;

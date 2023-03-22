@@ -6,6 +6,8 @@ const withNextra = require('nextra')({
     reactStrictMode: true,
     defaultShowCopyCode: true,
     codeHighlight: true,
+    staticImage: true,
+    readingTime: true,
     experimental: {
       serverComponentsExternalPackages: ['shiki', 'vscode-oniguruma']
     },

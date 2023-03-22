@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { Head } from 'next/head'
 import { useConfig } from 'nextra-theme-docs'
 import {Image } from 'next/image'
+import ThemeButton from '@/components/ThemeButton'
 
 const Logo = () => {
   return <>
@@ -15,23 +16,7 @@ const Logo = () => {
       // style={{ height: '32px', filter:'invert(1)' }}
     />
   </>
-  // return <>
-  //   <img
-  //     className={'logo-light'}
-  //     src='assets/img/logo-light.svg'
-  //     alt='logo'
-  //     style={{ height: '48px' }}
-  //   />
-  //   <img
-  //     className={'logo-dark'}
-  //     src='assets/img/logo.svg'
-  //     alt='logo'
-  //     style={{ height: '48px' }}
-  //   />
-  //   <span className='logo-label'>
-  //     CONNECTORJS
-  //   </span>
-  // </>
+  
 }
 
 const Footer =()=>{
@@ -56,9 +41,13 @@ export default {
   search: {
     placeholder: 'Search'
   },
-  darkMode: true,
+  darkMode: false,
+  darkMode: ['class', '[data-mode="dark"]'],
   nextThemes: {
     defaultTheme: 'dark',
+    themes : ['light', 'dark'],
+    darkMode: ['class', '[data-mode="dark"]'],
+    
   },
   docsRepositoryBase: 'https://github.com/connectorjs/web02/blob/main',
   // editLink: {
@@ -104,37 +93,30 @@ export default {
         cardType: 'summary_large_image',
         site: '@connectorjs_'
       },
-      // additionalLinkTags: [
-      //   {
-      //     href: 'assets/img/webicon.png',
-      //     rel: 'icon',
-      //     type: 'image/png'
-      //   },
-      // ],
-      // additionalMetaTags: [
-      //   { httpEquiv: 'Content-Language', content: 'en' },
-      //   { name: 'apple-mobile-web-app-title', content: 'ConnectorJS' },
-      //   { name: 'msapplication-TileColor', content: '#000' },
-      //   { name: 'msapplication-TileImage', content: 'assets/img/webicon.png' },
-      //   { name: 'theme-color', content: '#000' },
-      //   { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      //   // { name: 'description', content: 'ConnectorJS: Data connection platform' },
-      //   { name: 'og:title', content: desc },
-      //   { name: 'og:description', content: desc },
-      // ],
+    
     }
   },
   sidebar: {
-    defaultMenuCollapseLevel: 1,
+    defaultMenuCollapseLevel: 2,
     toggleButton: false
   },
-  // banner: {
-  //   dismissible: true,
-  //   key: 'miajupiter',
-  // },
+  banner: {
+    dismissible: true,
+    key: 'miajupiter12',
+    text:  <a href="https://connectorjs.com" target="_blank">
+    🎉 Connector.js is released. Read more →
+  </a>
+  },
   primaryHue: {
     dark: 170,
     light: 212
   },
+  navbar:{
+    // component: <ThemeButton />,
+    // extraContent: <ThemeButton style={{top:'-32px', position:'relative'}} />,
+    extraContent: <ThemeButton />,
+  }
+  
+  
   
 }
