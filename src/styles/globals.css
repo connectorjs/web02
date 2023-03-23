@@ -1,36 +1,5 @@
 @import url('tailwind.css');
 
-:root {
-  --shiki-color-text: #414141;
-  --shiki-color-background: transparent;
-  --shiki-token-constant: #1976d2;
-  --shiki-token-string: #22863a;
-  --shiki-token-comment: #aaa;
-  --shiki-token-keyword: #d32f2f;
-  --shiki-token-parameter: #ff9800;
-  --shiki-token-function: #6f42c1;
-  --shiki-token-string-expression: #22863a;
-  --shiki-token-punctuation: #212121;
-  --shiki-token-link: #22863a;
-  color-scheme: dark;
-}
-
-.dark {
-  --shiki-color-text: #717100;
-  --shiki-token-constant: #79b8ff;
-  --shiki-token-string: #ffab70;
-  --shiki-token-comment: #6b737c;
-  --shiki-token-keyword: #f97583;
-  --shiki-token-parameter: #ff9800;
-  --shiki-token-function: #b392f0;
-  --shiki-token-string-expression: #4bb74a;
-  --shiki-token-punctuation: #bbbbbb;
-  --shiki-token-link: #ffab70;
-}
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
-
 
 :root {
   --max-width: 1100px;
@@ -182,30 +151,25 @@ html[class~=dark] .dark\:nx-text-gray-400 {
   color: rgba(196, 203, 215, var(--tw-text-opacity));
 }
 
-
-.text-gradient-yellow-blue {
-  color: transparent;
+.text-gradient {
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #4433aa, #fff);
+}
+
+.text-gradient.yellow-blue {
   background-image: linear-gradient(to right, #ff5, #22d);
-
 }
 
-.text-gradient-mint-blue {
-  background: linear-gradient(271.72deg, #a2facf 7.09%, #64acff 96.61%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-gradient.mint-blue {
+  background-image: linear-gradient(271.72deg, #a2facf 7.09%, #64acff 96.61%);
 }
 
-.text-gradient-coral-yellow {
-  padding-right: 4px;
-  padding-bottom: 16px;
-  background: linear-gradient(267.91deg, #ffe57f 9.35%, #5182ef 96.48%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-gradient.coral-yellow {
+  background-image: linear-gradient(267.91deg, #ffe57f 9.35%, #5182ef 96.48%);
 }
+
 
 @keyframes animation_text_gradient {
   0% {
@@ -217,12 +181,13 @@ html[class~=dark] .dark\:nx-text-gray-400 {
   }
 }
 
-.text-gradient-anime {
-  -webkit-text-fill-color: transparent;
-  font-style: normal;
-  display: inline-block;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
+/* -webkit-text-fill-color: transparent;
+font-style: normal;
+display: inline-block;
+-webkit-background-clip: text !important;
+background-clip: text !important; */
+
+.text-gradient .anime {
   background: linear-gradient(90deg, #ce55b0, #f34dac 12%, #f48e66 27%, #f0b832 38%, #b2ce37 54%, #63d7af 70%, #1cc2df 84%, #0580e6 94%, #ce55b0);
   background-size: 1000px;
   animation: animation_text_gradient 4s linear infinite;
@@ -278,4 +243,17 @@ h1 .nx-leading-7 {
   --tw-text-opacity: 1;
   color: rgba(51,65,85,var(--tw-text-opacity));
   overflow-y: hidden;
+}
+
+.Docs_codeBlock__GmOTo {
+	background-color: var(--color-primary-500);
+	border-radius: 20px;
+	border: 1px solid var(--color-divider-on-dark);
+	box-shadow: 0 36px 120px rgba(108,55,244,.1);
+	/* text-align: left; */
+	/* margin-top: var(--size-medium); */
+	/* margin-bottom: var(--size-medium); */
+	padding-right: 25px;
+	overflow: hidden;
+	position: relative;
 }

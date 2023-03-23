@@ -9,12 +9,13 @@ import ThemeButton from '@/components/ThemeButton'
 
 const Logo = () => {
   return <>
-    <img 
-      src='/assets/logo/logo.png'
+    {/* <img 
+      src='/assets/logo/logo-img.png'
       alt='logo'
       style={{ height: '64px' }}
       // style={{ height: '32px', filter:'invert(1)' }}
-    />
+    /> */}
+    <h1 className={'nx-text-4xl nx-font-bold text-gradient yellow-blue'} >Connector.js</h1>
   </>
   
 }
@@ -42,12 +43,8 @@ export default {
     placeholder: 'Search'
   },
   darkMode: false,
-  darkMode: ['class', '[data-mode="dark"]'],
   nextThemes: {
     defaultTheme: 'dark',
-    themes : ['light', 'dark'],
-    darkMode: ['class', '[data-mode="dark"]'],
-    
   },
   docsRepositoryBase: 'https://github.com/connectorjs/web02/blob/main',
   // editLink: {
@@ -108,7 +105,7 @@ export default {
   </a>
   },
   primaryHue: {
-    dark: 170,
+    dark: 188,
     light: 212
   },
   navbar:{

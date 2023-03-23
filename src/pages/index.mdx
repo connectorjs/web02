@@ -3,82 +3,58 @@ title: Home
 layout: full
 ---
 
-import {Mermaid} from 'mdx-mermaid/Mermaid'
-import ThemeButton from '@/components/ThemeButton'
+
+import { Mermaid } from "mdx-mermaid/Mermaid"
+import ThemeButton from "@/components/ThemeButton"
+import { Button, Spacer } from "@geist-ui/core"
 
 
-
-<div className="nx-h-full gap-6 flex flex-col justify-start lg:justify-center items-center lg:items-start" style={{height:'calc(100vh - 60px)'}}>
-  <h1 className="text-center lg:text-left font-extrabold tracking-tighter text-3xl md:text-4xl lg:text-5xl nx-py-2  text-gradient-coral-yellow" >
+<div
+  className="nx-h-full gap-6 flex flex-col justify-start lg:justify-center items-center lg:items-start"
+  style={{ height: "calc(100vh - 60px)" }}
+>
+  <h1 className="text-center lg:text-left font-extrabold tracking-tighter text-3xl md:text-4xl lg:text-5xl nx-py-2  text-gradient coral-yellow">
     Easily connect IOT<br />
     Manage and analyze them.
   </h1>
-   <p className="text-slate-700 dark:text-slate-300 mb-2 text-center text-base sm:text-lg max-w-xl lg:text-left" >
-    With Connector.JS, you can easily connect to data, api, wcf, electronic devices (raspberry pi), file, server...
+  <p className="text-slate-700 dark:text-slate-300 mb-2 text-center text-base sm:text-lg max-w-xl lg:text-left">
+    With Connector.JS, you can easily connect to data, api, wcf, electronic
+    devices (raspberry pi), file, server...
+    <br />
+    <div className='nx-flex'>
+    <Button type="success" onClick={()=>window.location.assign('#features')} >Get started</Button>
+    <Spacer w={'0.5rem'} />
+    <Button type="secondary" onClick={()=>window.location.assign('/docs')}>Documentation</Button>
     
-    <a
-      className="underline underline-offset-2 text-black dark:text-light-gold"
-      href="/login"
-      >API key</a>
+    </div>
   </p>
   <div className="relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute">
-    <img src="/assets/img/connectorjs-the-expansion-of-iot.png"
+    <img
+      src="/assets/img/connectorjs-the-expansion-of-iot.png"
       alt="connector.js"
       className="img-shadow"
       style={{
-          position: 'absolute',
-          height: '100%',
-          width: '100%',
-          left: 0,
-          top: 0,
-          right: 0,
-          bottom: 0,
-          objectFit: 'contain',
-          color: 'transparent',
-          }}
+        position: "absolute",
+        height: "100%",
+        width: "100%",
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        objectFit: "contain",
+        color: "transparent",
+      }}
     />
   </div>
 </div>
 
-# Introduction
+<h1 className="text-3xl font-bold text-gradient yellow-blue">
+  Robotorize Your Data Operations (Robotic Process Automation with Connector.js)
+</h1>
+
+![rpa](/assets/img/rpa-hud.png)
 
 
-<h1 className="text-3xl font-bold text-gradient-anime">
-  Tailwind CSS Custom Gradient Text Color
-</h1> 
-
-<ThemeButton />
-
-{/* 
-<Mermaid chart={`gitGraph
-    commit
-    commit
-    branch develop
-    checkout develop
-    commit
-    branch testmodule
-    checkout testmodule
-    commit
-    checkout develop
-    commit
-    checkout main
-    merge develop
-    commit
-    commit
-    checkout testmodule
-    commit
-    checkout main
-    merge testmodule
-    commit
-`} /> */}
-
-
-<hr />
-<br />
-
-
-
-### MErhaba dunya
+## Features
 
 dfdfdf
-dfdfdff

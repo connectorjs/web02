@@ -6,8 +6,20 @@ toc: true
 
 # About
 
-This is the about page! This page is shown on the navbar.
+import { Grid, Button, Collapse, Text } from '@geist-ui/core'
 
+<Grid.Container gap={1.5}>
+  <Grid><Button auto type="primary">Primary</Button></Grid>
+  <Grid><Button auto type="secondary">Secondary</Button></Grid>
+  <Grid><Button auto type="success">Success</Button></Grid>
+  <Grid><Button auto type="warning">Warning</Button></Grid>
+  <Grid><Button auto type="error">Error</Button></Grid>
+  <Grid><Button auto type="abort">Abort</Button></Grid>
+  <Grid><Button auto type="secondary-light">Secondary Light</Button></Grid>
+  <Grid><Button auto type="success-light">Success Light</Button></Grid>
+  <Grid><Button auto type="warning-light">Warning Light</Button></Grid>
+  <Grid><Button auto type="error-light" onClick={console.log('log')}>Error Light</Button></Grid>
+</Grid.Container>
 
 
 import Counters from '../components/counters'
@@ -35,7 +47,7 @@ Inlined syntax highlighting is also supported `let x = 1{:jsx}` via:
 
 
 import { Tabs, Tab } from 'nextra-theme-docs'
-import {Button} from '../components/button'
+// import {Button} from '../components/button'
 import { useState } from 'react'
 
 
@@ -80,3 +92,8 @@ export const Mybtn=()=>{
 
 
  
+<Collapse shadow title="Question A" subtitle="More description about Question A">
+  <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+</Collapse>

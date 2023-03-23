@@ -13,6 +13,7 @@
   },
   "ipinfo": {
     "title": "ipinfo",
-    "type": "page"
+    "type": "page",
+    "display": "hidden"
   }
 }
